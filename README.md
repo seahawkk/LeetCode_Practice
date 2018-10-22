@@ -1,3 +1,3 @@
 # LeetCode_Practice
-Just for practice 
+Just for practicing 
 Recording some exercises that I have made.
