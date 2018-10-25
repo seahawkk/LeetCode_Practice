@@ -47,7 +47,41 @@ class Solution:
         return l1 if l1.val <= l2.val else l2
 ```
 
-所需时间代价较大，且用C++实现时更加复杂
+所需时间代价较大时间大概68ms，用C++实现时更加复杂。
+
+
+
+方法二：建立dummy head
+
+```python
+class Solution:
+    def mergeTwoLists(self, l1, l2):
+        """
+        :type l1: ListNode
+        :type l2: ListNode
+        :rtype: ListNode
+        """
+        if l1 == None:
+            return l2
+        if l2 == None:
+            return l1
+        dummy=cur=ListNode(-1)
+        while l1 and l2:
+            if l1.val <= l2.val:
+                cur.next=l1
+                l1=l1.next
+            else:
+                cur.next=l2
+                l2=l2.next
+            cur=cur.next
+        cur.next=l1 if l1 else l2
+        head=dummy.next
+        return head
+```
+
+时间减少到44ms.
+
+
 
 **迭代法C++实现**
 
