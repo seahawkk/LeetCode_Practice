@@ -1,6 +1,6 @@
 ## 21 合并两个有序链表
 
-* **合并两个有序链表：**[题目来源：merge two sorted lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
+* **题目来源：**[21 merge two sorted lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
 
 > 输入：1->2->4 , 1->3->4
 >
@@ -8,7 +8,7 @@
 
 **开始的思路**：迭代的方法，对于链表L1，L2，将L2中的第一个结点cur2依次与L1中的结点cur1进行对比，使其位于合并链表的正确位置，之后排序时直接从该结点cur2 开始。
 
-**python实现**
+### python实现
 
 ```python
 # Definition for singly-linked list.
@@ -83,7 +83,7 @@ class Solution:
 
 
 
-**迭代法C++实现**
+### C++实现（迭代法）
 
 ```C++
 /**

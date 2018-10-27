@@ -1,8 +1,6 @@
 ## 206翻转链表（reverse linked list）
 
-* **题目来源：** [翻转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
-
-输入一个链表将其翻转：
+* **题目来源：** [206 reverse linked list](https://leetcode-cn.com/problems/reverse-linked-list/)
 
 > 输入：1->2->3->4->5->NULL     
 >

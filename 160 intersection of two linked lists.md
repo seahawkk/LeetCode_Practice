@@ -1,6 +1,6 @@
 ## 160交叉链表
 
-* **找到两个链表的交点**：题目来源[160交叉链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
+* **题目来源：**[160 intersection of two linked lists](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
 
 ```
 A:          a1 → a2
@@ -16,7 +16,7 @@ B:     b1 → b2 → b3
 
 所有，在通过指针来访问链表时，当链表A从表头访问到表尾后，使其从B的表头继续开始访问，同理，当链表B从表头访问到表尾后，使其从A的表头开始访问，这样，当二者访问相同的节点个数后，将会在交点处相遇。
 
-**python实现**
+### python实现
 
 ```python
 #class ListNode(object):
@@ -32,7 +32,7 @@ class Solution(object):
         return LA #当没有交点时，返回None
 ```
 
-**C++实现**
+### C++实现
 
 ```C++
 struct ListNode{
