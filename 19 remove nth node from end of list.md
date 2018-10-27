@@ -1,6 +1,6 @@
 ## 19 删除链表的倒数第N个结点
 
-**题目来源 :**[19 Remove Nth Node From End of List (Medium)](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) 
+* **题目来源 :**[19 Remove Nth Node From End of List (Medium)](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) 
 
 > 给定一个链表：1->2->3->4->5，和n=2
 >

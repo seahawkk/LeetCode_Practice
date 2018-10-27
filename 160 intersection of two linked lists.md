@@ -1,6 +1,14 @@
 ## 160交叉链表
 
-**找到两个链表的交点**：题目来源[160交叉链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
+* **找到两个链表的交点**：题目来源[160交叉链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
+
+```
+A:          a1 → a2
+                   ↘
+                     c1 → c2 → c3
+                   ↗            
+B:     b1 → b2 → b3
+```
 
 **解题思路**
 

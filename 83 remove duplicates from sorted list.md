@@ -1,6 +1,6 @@
 ## 83 从有序链表删除重复节点
 
-**题目来源：** [83. Remove Duplicates from Sorted List ](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/) 
+* **题目来源：** [83. Remove Duplicates from Sorted List ](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/) 
 
 > 输入：1->1->2->3->3->4
 >
