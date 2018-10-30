@@ -27,6 +27,47 @@
 
 之后可以通过将从中点位置开始的链表反转并与前半部分链表对比来判断是否为回文链表。
 
+### python 实现
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def isPalindrome(self, head):
+        """
+        :type head: ListNode
+        :rtype: bool
+        """
+        if (head == None or head.next == None):
+            return True
+        slow=head
+        fast=head
+        while (fast.next != None and fast.next.next != None):
+            slow=slow.next
+            fast=fast.next.next
+        slow=self.reverseLinkedlist(slow.next)
+        while(slow != None):
+            if slow.val != head.val:
+                return False
+            slow=slow.next
+            head=head.next
+        return True
+    def reverseLinkedlist(self,head):
+        dummyhead=None
+        pre=dummyhead
+        cur=head
+        while(cur != None):
+            nex=cur.next
+            cur.next=pre
+            pre=cur
+            cur=nex
+        return pre
+```
+
 ### C++实现
 
 ```C++
