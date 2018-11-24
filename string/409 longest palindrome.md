@@ -46,6 +46,8 @@ class Solution:
 
 ### C++实现
 
+* 哈希表
+
 ```C++
 class Solution {
 public:
@@ -56,6 +58,25 @@ public:
             hash[s[i]]++;
         for(auto a:hash)
             ans+=(a.second/2)*2;
+        if(ans<s.size())
+            ans++;
+        return ans;
+    }
+};
+```
+
+* 数组（速度更快）
+
+```C++
+class Solution {
+public:
+    int longestPalindrome(string s) {
+        vector<int> cnts(256);
+        int ans=0;
+        for(int i=0;i<s.size();i++)
+            cnts[s[i]]++;
+        for(auto a:cnts)
+            ans+=(a/2)*2;
         if(ans<s.size())
             ans++;
         return ans;
